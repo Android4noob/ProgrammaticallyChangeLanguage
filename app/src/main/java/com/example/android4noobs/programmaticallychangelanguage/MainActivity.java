@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         /**
          * Log default language on device
          */
-        Log.i(TAG, Locale.getDefault().getDisplayLanguage() + "is default languages on devise");
+        Log.i(TAG, Locale.getDefault().getDisplayLanguage() + " is default languages on devise");
     }
 
     @Override
@@ -139,17 +139,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         /**
          * Update all views text
          */
-        if (textView != null) {
-            textView.setText(R.string.text);
+        try {
+            if (textView != null) {
+                textView.setText(R.string.text);
+                Log.i(TAG, "In textView language changed successful");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.e(TAG, "Error, in textView language changed ");
         }
-        if (btnEnView != null) {
-            btnEnView.setText(R.string.btn_en);
+        try {
+            if (btnEnView != null) {
+                btnEnView.setText(R.string.btn_en);
+                Log.i(TAG, "In Button EN language changed successful");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.e(TAG, "Error, in Button EN language changed ");
         }
-        if (btnRuView != null) {
-            btnRuView.setText(R.string.btn_ru);
+        try {
+            if (btnRuView != null) {
+                btnRuView.setText(R.string.btn_ru);
+                Log.i(TAG, "In Button RU language changed successful");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.e(TAG, "Error, in Button RU language changed ");
         }
-        if (btnDeView != null) {
-            btnDeView.setText(R.string.btn_de);
+        try {
+            if (btnDeView != null) {
+                btnDeView.setText(R.string.btn_de);
+                Log.i(TAG, "In Button DE language changed successful");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.e(TAG, "Error, in Button DE language changed ");
         }
     }
 

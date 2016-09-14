@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:gravity="center_horizontal"
-        android:text="Hello World!"
+        android:text="@string/text"
         android:textSize="@dimen/text_view_size_font" />
 
     <Button
