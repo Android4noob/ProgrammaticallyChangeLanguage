@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ProgrammaticallyChangeLanguage</string>
+        <string name="text">Hello World!!!</string>
+        <string name="btn_en">English</string>
+        <string name="btn_ru">Russian</string>
+        <string name="btn_de">German</string>
 </resources>
