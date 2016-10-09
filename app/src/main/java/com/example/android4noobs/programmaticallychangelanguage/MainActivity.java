@@ -17,13 +17,10 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static final String TAG = MainActivity.class.getName();
-    @Nullable
+
     TextView textView = null;
-    @Nullable
     Button btnRuView = null;
-    @Nullable
     Button btnEnView = null;
-    @Nullable
     Button btnDeView = null;
 
     @Override
@@ -54,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        String language = "en";
+        String language = "";
         switch (view.getId()) {
             case R.id.btn_ru:
                 language = "ru";
